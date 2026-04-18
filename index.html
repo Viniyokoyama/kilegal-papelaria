@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KI-Legal Papelaria · Desde 1995</title>
+<meta name="description" content="Material escolar, carimbos, mochilas e artigos de papelaria em um só lugar. Atendimento personalizado desde 1995. Fale no WhatsApp ou venha ao balcão." />
+<meta property="og:title" content="KI-Legal Papelaria · Desde 1995" />
+<meta property="og:description" content="Onde as histórias escolares começam. Material escolar, carimbos, mochilas e muito mais." />
+<meta property="og:image" content="images/logo.png" />
+<link rel="icon" href="images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,700;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          ink: '#0f172a',
+          brand: {
+            50: '#eef6ff',
+            100: '#d9ebff',
+            500: '#2f6fd8',
+            600: '#1f57b8',
+            700: '#17448f',
+            900: '#0d2a5c',
+          },
+          accent: '#ffb703',
+          leaf: '#5aa95a',
+        },
+        boxShadow: {
+          soft: '0 10px 40px -12px rgba(15,23,42,.18)',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; color:#0f172a; }
+  .font-display { font-family: 'Fraunces', serif; }
+  .grain::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:overlay;
+    background-image:radial-gradient(#ffffff20 1px,transparent 1px);background-size:3px 3px;
+  }
+  .blob{filter:blur(60px);opacity:.55;}
+  .card-hover{transition:transform .25s ease, box-shadow .25s ease;}
+  .card-hover:hover{transform:translateY(-4px); box-shadow:0 20px 50px -18px rgba(15,23,42,.25);}
+  .chip{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .7rem;border-radius:999px;font-size:.78rem;font-weight:600;}
+  .wa-float{box-shadow:0 18px 40px -12px rgba(37,211,102,.55);}
+  @keyframes pulse-ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+  .wa-float-pulse{animation:pulse-ring 2.2s infinite;}
+</style>
+</head>
+<body class="bg-[#fbf7ef]">
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 backdrop-blur bg-[#fbf7ef]/80 border-b border-black/5">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="images/logo.png" alt="KI-Legal" class="h-10 w-10 rounded-full object-contain" onerror="this.style.display='none'"/>
+      <div class="leading-tight">
+        <div class="font-display text-xl font-bold text-brand-900">KI-Legal</div>
+        <div class="text-[11px] tracking-widest uppercase text-brand-600 -mt-0.5">Papelaria · desde 1995</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink/80">
+      <a href="#produtos" class="hover:text-brand-700">Produtos</a>
+      <a href="#carimbos" class="hover:text-brand-700">Carimbos</a>
+      <a href="#sobre" class="hover:text-brand-700">Sobre</a>
+      <a href="#contato" class="hover:text-brand-700">Contato</a>
+    </nav>
+    <a href="https://wa.me/5594984003902?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20KI-Legal%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+       target="_blank" rel="noopener"
+       class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fbd5a] text-white text-sm font-semibold px-4 py-2 rounded-full shadow-soft">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.555-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-brand-500 blob"></div>
+  <div class="absolute top-40 -right-20 w-96 h-96 rounded-full bg-accent blob"></div>
+  <div class="max-w-6xl mx-auto px-5 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center relative">
+    <div>
+      <span class="chip bg-brand-100 text-brand-700">✨ Tradição desde 1995</span>
+      <h1 class="font-display text-4xl md:text-6xl font-bold leading-[1.05] mt-5 text-brand-900">
+        Onde as <span class="italic text-brand-600">histórias escolares</span> começam.
+      </h1>
+      <p class="mt-5 text-lg text-ink/75 max-w-xl">
+        Material escolar, carimbos, mochilas, impressão, presentes criativos e atendimento de quem conhece cada cliente pelo nome.
+        Tudo num só balcão — e agora, a um clique no WhatsApp.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/5594984003902?text=Ol%C3%A1%20KI-Legal!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fbd5a] text-white font-semibold px-6 py-3.5 rounded-full shadow-soft">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.555-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a href="#contato" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-50 text-brand-700 font-semibold px-6 py-3.5 rounded-full border border-brand-200 shadow-soft">
+          📍 Vir ao balcão
+        </a>
+      </div>
+      <div class="mt-8 flex items-center gap-6 text-sm text-ink/70">
+        <div class="flex items-center gap-2"><span class="text-leaf text-xl">✓</span> Entrega rápida</div>
+        <div class="flex items-center gap-2"><span class="text-leaf text-xl">✓</span> Listas escolares</div>
+        <div class="flex items-center gap-2"><span class="text-leaf text-xl">✓</span> Pedidos por WhatsApp</div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-100 to-accent/30 rounded-[2rem] rotate-3"></div>
+      <div class="relative bg-white rounded-[2rem] p-8 shadow-soft">
+        <img src="images/logo.png" alt="KI-Legal Papelaria"
+             class="w-full aspect-square object-contain"
+             onerror="this.outerHTML='<div class=\'w-full aspect-square flex items-center justify-center bg-gradient-to-br from-brand-50 to-accent/20 rounded-2xl\'><div class=\'text-center\'><div class=\'font-display text-5xl font-bold text-brand-700\'>KI-Legal</div><div class=\'mt-2 text-brand-600\'>Papelaria</div></div></div>'"/>
+      </div>
+      <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-soft px-4 py-3 flex items-center gap-3">
+        <div class="bg-brand-100 text-brand-700 w-10 h-10 grid place-items-center rounded-full font-bold">30+</div>
+        <div class="text-xs leading-tight"><div class="font-bold text-ink">anos de história</div><div class="text-ink/60">servindo nossa cidade</div></div>
+      </div>
+      <div class="absolute -top-4 -right-4 bg-accent text-brand-900 rounded-full px-4 py-2 text-sm font-bold rotate-6 shadow-soft">🎒 Volta às aulas</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="max-w-2xl">
+      <span class="chip bg-brand-100 text-brand-700">Nosso catálogo</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-brand-900 mt-4">Tudo o que a escola, o escritório e a criatividade pedem.</h2>
+      <p class="text-ink/70 mt-4">Se é papelaria, a KI-Legal tem. E o que não tiver na prateleira, a gente corre atrás pra você.</p>
+    </div>
+
+    <!-- Foto destaque -->
+    <div class="mt-12 rounded-3xl overflow-hidden shadow-soft relative">
+      <img src="images/mochilas.png" alt="Mochilas, cadernos e material escolar KI-Legal"
+           class="w-full object-cover max-h-[480px]" />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-900/70 via-transparent to-transparent flex items-end">
+        <div class="p-8 text-white">
+          <div class="font-display text-2xl md:text-3xl font-bold">Onde as histórias escolares começam desde 1995</div>
+          <a href="https://wa.me/5594984003902?text=Ol%C3%A1!%20Quero%20ver%20o%20material%20escolar." target="_blank" rel="noopener"
+             class="mt-4 inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fbd5a] text-white font-semibold px-5 py-2.5 rounded-full text-sm">
+            Pedir pelo WhatsApp →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+      <!-- Cards -->
+      <div class="card-hover bg-[#fbf7ef] rounded-2xl overflow-hidden border border-black/5">
+        <div class="bg-brand-100 h-32 flex items-center justify-center text-6xl">🎒</div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-bold text-brand-900">Mochilas & estojos</h3>
+          <p class="text-sm text-ink/70 mt-2">Kuromi, Disney, personagens preferidos e modelos para todas as idades.</p>
+        </div>
+      </div>
+      <div class="card-hover bg-[#fbf7ef] rounded-2xl overflow-hidden border border-black/5">
+        <div class="bg-accent/20 h-32 flex items-center justify-center text-6xl">📚</div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-bold text-brand-900">Material escolar</h3>
+          <p class="text-sm text-ink/70 mt-2">Cadernos, canetas, lápis, marcadores e tudo da lista — montamos o kit pra você.</p>
+        </div>
+      </div>
+      <div class="card-hover bg-[#fbf7ef] rounded-2xl overflow-hidden border border-black/5">
+        <div class="bg-leaf/10 h-32 flex items-center justify-center text-6xl">🖌️</div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-bold text-brand-900">Material de arte</h3>
+          <p class="text-sm text-ink/70 mt-2">Tintas, pincéis, papéis especiais e tudo para a criatividade fluir.</p>
+        </div>
+      </div>
+      <div class="card-hover bg-[#fbf7ef] rounded-2xl overflow-hidden border border-black/5">
+        <div class="bg-brand-50 h-32 flex items-center justify-center text-6xl">🏢</div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-bold text-brand-900">Escritório & empresa</h3>
+          <p class="text-sm text-ink/70 mt-2">Pastas, blocos, papel A4, organização e insumos para o dia a dia corporativo.</p>
+        </div>
+      </div>
+      <div class="card-hover bg-[#fbf7ef] rounded-2xl overflow-hidden border border-black/5">
+        <div class="bg-pink-50 h-32 flex items-center justify-center text-6xl">🎁</div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-bold text-brand-900">Presentes & cartões</h3>
+          <p class="text-sm text-ink/70 mt-2">Aquele mimo certo pra cada ocasião, com embalagem caprichada.</p>
+        </div>
+      </div>
+      <div class="card-hover bg-[#fbf7ef] rounded-2xl overflow-hidden border border-black/5">
+        <div class="bg-purple-50 h-32 flex items-center justify-center text-6xl">🖨️</div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-bold text-brand-900">Impressão & cópias</h3>
+          <p class="text-sm text-ink/70 mt-2">Impressão colorida, xerox, digitalização e encadernação no balcão.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARIMBOS -->
+<section id="carimbos" class="py-20 bg-gradient-to-br from-brand-900 to-brand-700 text-white relative overflow-hidden">
+  <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-accent blob"></div>
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center relative">
+    <div>
+      <span class="chip bg-white/10 text-white border border-white/20">⚡ Destaque</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold mt-4 leading-tight">Linha completa de <span class="italic text-accent">carimbos</span> e acessórios.</h2>
+      <p class="mt-5 text-white/80 text-lg">Carimbos automáticos, datadores, personalizados, tinta, almofadas e carimbos de madeira. Orçamento rápido e produção com qualidade.</p>
+      <ul class="mt-6 space-y-2 text-white/90">
+        <li class="flex gap-3"><span class="text-accent">✓</span> Carimbos personalizados para CNPJ, logotipos e assinaturas</li>
+        <li class="flex gap-3"><span class="text-accent">✓</span> Datadores e numeradores</li>
+        <li class="flex gap-3"><span class="text-accent">✓</span> Tinta recarga e almofadas de reposição</li>
+      </ul>
+      <a href="https://wa.me/5594984003902?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20carimbo%20personalizado." target="_blank" rel="noopener"
+         class="mt-8 inline-flex items-center gap-2 bg-accent hover:bg-yellow-400 text-brand-900 font-bold px-6 py-3.5 rounded-full shadow-soft">
+        Pedir orçamento no WhatsApp →
+      </a>
+    </div>
+    <div class="relative">
+      <div class="bg-white/10 border border-white/15 rounded-3xl p-6 backdrop-blur">
+        <img src="images/carimbos.png" alt="Linha completa de carimbos" class="rounded-2xl w-full object-cover"
+          onerror="this.outerHTML='<div class=\'rounded-2xl w-full aspect-square bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center\'><div class=\'text-8xl\'>🔖</div></div>'"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-20 bg-[#fbf7ef]">
+  <div class="max-w-5xl mx-auto px-5 grid md:grid-cols-5 gap-10 items-center">
+    <div class="md:col-span-2">
+      <div class="relative">
+        <div class="absolute -inset-2 bg-accent/40 rounded-3xl rotate-3"></div>
+        <div class="relative bg-white rounded-3xl p-6 shadow-soft">
+          <div class="font-display italic text-brand-700 text-lg">"Atendimento que vira amizade."</div>
+          <div class="mt-3 text-6xl font-display font-bold text-brand-900 leading-none">1995</div>
+          <div class="text-sm text-ink/60 mt-1">ano em que tudo começou</div>
+        </div>
+      </div>
+    </div>
+    <div class="md:col-span-3">
+      <span class="chip bg-brand-100 text-brand-700">Nossa história</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mt-4 text-brand-900">Três décadas ajudando gerações a estudar, trabalhar e criar.</h2>
+      <p class="mt-4 text-ink/75 text-lg">A KI-Legal nasceu em 1995 como uma papelaria de bairro e cresceu junto com a comunidade. Hoje somos referência em material escolar, carimbos e presentes — mas o que não mudou é o atendimento humano, feito por quem conhece cada lista, cada professor e cada cliente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + CONTATO -->
+<section id="contato" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-8">
+    <div class="bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white rounded-3xl p-8 md:p-10 relative overflow-hidden">
+      <div class="absolute -top-8 -right-8 text-[10rem] opacity-10">💬</div>
+      <h3 class="font-display text-3xl font-bold">Fale agora no WhatsApp</h3>
+      <p class="mt-3 text-white/90">Tire dúvidas, peça orçamento, monte o kit da lista escolar e receba ou retire no balcão.</p>
+      <div class="mt-6 text-white/90 font-mono text-lg">(94) 98400-3902</div>
+      <a href="https://wa.me/5594984003902?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20KI-Legal." target="_blank" rel="noopener"
+         class="mt-6 inline-flex items-center gap-2 bg-white text-[#128C7E] font-bold px-6 py-3.5 rounded-full shadow-soft hover:bg-white/95">
+        Abrir conversa →
+      </a>
+    </div>
+    <div class="bg-brand-900 text-white rounded-3xl p-8 md:p-10 relative overflow-hidden">
+      <div class="absolute -top-8 -right-8 text-[10rem] opacity-10">📍</div>
+      <h3 class="font-display text-3xl font-bold">Visite nosso balcão</h3>
+      <p class="mt-3 text-white/80">Venha conferir de pertinho. Temos aquele atendimento de quem sabe exatamente o que você precisa.</p>
+      <dl class="mt-6 space-y-3 text-white/90">
+        <div><dt class="text-xs uppercase tracking-widest text-white/60">Horário</dt><dd class="font-semibold">Seg a Sáb · 08h às 18h</dd></div>
+        <div><dt class="text-xs uppercase tracking-widest text-white/60">Telefone</dt><dd class="font-semibold">(94) 98400-3902</dd></div>
+      </dl>
+      <a href="https://wa.me/5594984003902?text=Ol%C3%A1!%20Qual%20o%20endere%C3%A7o%20da%20loja%3F" target="_blank" rel="noopener"
+         class="mt-6 inline-flex items-center gap-2 bg-accent text-brand-900 font-bold px-6 py-3.5 rounded-full shadow-soft hover:bg-yellow-400">
+        Como chegar →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0b1f45] text-white/80 py-10">
+  <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <img src="images/logo.png" alt="" class="h-9 w-9 rounded-full bg-white object-contain" onerror="this.style.display='none'"/>
+      <div class="text-sm">
+        <div class="font-display text-lg font-bold text-white">KI-Legal Papelaria</div>
+        <div class="text-white/60">© <span id="yr"></span> · Desde 1995</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-5 text-sm">
+      <a href="#produtos" class="hover:text-white">Produtos</a>
+      <a href="#carimbos" class="hover:text-white">Carimbos</a>
+      <a href="#contato" class="hover:text-white">Contato</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/5594984003902?text=Ol%C3%A1%20KI-Legal!" target="_blank" rel="noopener"
+   aria-label="Falar no WhatsApp"
+   class="wa-float wa-float-pulse fixed bottom-5 right-5 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full grid place-items-center hover:scale-105 transition">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.555-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+</a>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
